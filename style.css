@@ -35,6 +35,9 @@
   justify-content: end;
   list-style: none;
 }
+.ham{
+  display: none;
+}
 .fa-solid{
   display: none;
 }
@@ -165,8 +168,8 @@ flex-wrap: wrap;
   justify-content: center;
   text-align: center;
 } 
-.fa-solid{
-  display: flex;
+.cabeza{
+  width: 100vw;
 }
 .hero{
   padding: 0px 15px 0px 15px;
