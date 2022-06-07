@@ -155,7 +155,7 @@ flex-wrap: wrap;
 }
  @media (max-width: 1000px){  /* este media hace que cambie cuando hago la pantalla mas chica. guey*/
 .body{ 
-  background:url(./img/charlota-blunarova-U7ud6KGrsRQ-unsplash\ 1.png);
+  background:url(./img/charlota.png);
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -191,7 +191,6 @@ flex-wrap: wrap;
 .btn-a{
   margin-bottom: 20px;
   width: 11rem;
-
 }
 .btn-b{
   margin-right: 100px;
@@ -202,7 +201,6 @@ flex-wrap: wrap;
   flex-direction: column;
   justify-content: center;
 }
-
 }
 
 
