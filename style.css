@@ -35,6 +35,9 @@
   justify-content: end;
   list-style: none;
 }
+.fa-solid{
+  display: none;
+}
 .li {
   padding: 25px 40px;
   color: black;
@@ -156,12 +159,15 @@ flex-wrap: wrap;
  @media (max-width: 1000px){  /* este media hace que cambie cuando hago la pantalla mas chica. guey*/
 .body{ 
   background:url(./img/charlota.png);
-  width: 100%;
+  width: 100vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
 } 
+.fa-solid{
+  display: flex;
+}
 .hero{
   padding: 0px 15px 0px 15px;
 }
@@ -191,10 +197,12 @@ flex-wrap: wrap;
 .btn-a{
   margin-bottom: 20px;
   width: 11rem;
+  border: none;
 }
 .btn-b{
   margin-right: 100px;
   width: 11rem;
+  border: none;
 }
 .parrafo_caja{
   display: flex;
