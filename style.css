@@ -11,6 +11,7 @@
   background:url(./img/charlota.png);
   font-family: "Garamond", sans-serif;
   color: white;
+  font-weight: 700;
 }
 .cabeza {
   background-color: #dae8ec;
@@ -107,11 +108,12 @@ margin-top: 20px;
   padding: 10px;
   margin: 150px 20px;
   box-shadow: 5px 5px 5px  rgba(0, 0, 0, 0.5);
+  line-height: 170%;
 }
 .parrafo_caja_a{
   text-align: center;
   width: 95%;
-  line-height: 1.5;
+  
 }
 .encabezad-n{
   font-size: 1.5rem;
@@ -151,6 +153,7 @@ flex-wrap: wrap;
   background-color: white;
   padding: 1.5rem 1.5rem;
   font-size: 2rem;
+  font-weight: 700;
 }
 .fixed{
   height: 50px;
@@ -167,6 +170,7 @@ flex-wrap: wrap;
   flex-direction: column;
   justify-content: center;
   text-align: center;
+  
 } 
 .cabeza{
   width: 100vw;
@@ -207,10 +211,11 @@ flex-wrap: wrap;
   width: 11rem;
   border: none;
 }
-.parrafo_caja{
+.parrafo_caja p{
   display: flex;
   flex-direction: column;
   justify-content: center;
+  line-height: 170%;
 }
 }
 
