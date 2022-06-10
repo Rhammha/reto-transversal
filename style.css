@@ -5,7 +5,7 @@
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
-  /* border: 1px red solid; */
+  border: 1px red solid;
 }
 .body {
   background:url(./img/charlota.png);
@@ -16,7 +16,7 @@
 .cabeza {
   background-color: #dae8ec;
   height: 70px;
-  width: 100%;
+  width: 98vw;
   box-shadow: 0px 10px 10px -1px rgba(0, 0, 0, 0.15);
 }
 .nav {
@@ -27,8 +27,7 @@
   width: 100%;
 }
 .img {
-  height: 70px;
-  padding-left: 25px;
+  height: 75%;
 }
 .ul {
   display: flex;
@@ -43,7 +42,7 @@
   display: none;
 }
 .li {
-  padding: 25px 40px;
+  padding: 13px 40px;
   color: black;
 }
 .li:hover {
@@ -55,8 +54,7 @@
   font-size: 3rem;
 }
 .modelos {
-  margin: 120px 60px 0px 0px;
-  padding-right: 25px;
+  margin: 120px 0px 0px 0px;
 }
 .caja {
   display: flex;
@@ -67,7 +65,7 @@
   height: 330px;
   width: 640px;
   padding-top: 100px;
-  margin-right: 10px;
+  /* margin-right: 10px; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -105,15 +103,14 @@ margin-top: 20px;
   flex-direction: column;
   line-height: 1.5;
   width: 100%;
-  padding: 10px;
+  /* padding: 10px; */
   margin: 150px 20px;
   box-shadow: 5px 5px 5px  rgba(0, 0, 0, 0.5);
   line-height: 170%;
 }
 .parrafo_caja_a{
   text-align: center;
-  width: 95%;
-  
+  width: 95%;  
 }
 .encabezad-n{
   font-size: 1.5rem;
@@ -165,21 +162,17 @@ flex-wrap: wrap;
  @media (max-width: 1000px){  /* este media hace que cambie cuando hago la pantalla mas chica. guey*/
 .body{ 
   background:url(./img/charlota.png);
-  width: 100vw;
+  /* width: 100vw; */
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  
 } 
 .cabeza{
-  width: 100vw;
-}
-.hero{
-  padding: 0px 15px 0px 15px;
+  width: 98vw;
 }
 .ul{
-  display: none;
+  /* display: none; */
 }
 .caja{ 
   display: flex;
@@ -204,12 +197,14 @@ flex-wrap: wrap;
 .btn-a{
   margin-bottom: 20px;
   width: 11rem;
-  border: none;
+  border: none; 
+  width: 20vw; 
 }
 .btn-b{
   margin-right: 100px;
   width: 11rem;
   border: none;
+  width: 30vw;
 }
 .parrafo_caja p{
   display: flex;
