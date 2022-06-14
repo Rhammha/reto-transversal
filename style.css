@@ -6,6 +6,8 @@
   box-sizing: border-box;
   text-decoration: none;
   border: 1px red solid;
+  list-style: none;
+  
 }
 .body {
   background:url(./img/charlota.png);
@@ -15,46 +17,48 @@
 }
 .cabeza {
   background-color: #dae8ec;
-  height: 70px;
-  width: 98vw;
-  box-shadow: 0px 10px 10px -1px rgba(0, 0, 0, 0.15);
-}
-.nav {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  height: 70px;
+  height: 80px;
   width: 100%;
+  box-shadow: 0px 10px 10px -1px rgba(0, 0, 0, 0.15);
+  display: flex;
+  justify-content: space-between;
+}
+.fa-solid {
+  display: none;
+}
+.menu-toggle{
+  display: none;
+}
+.toggle{
+  display: flex;
+  justify-content: space-evenly;
+  width: 40vw;
+  margin-top: 20px;
+}
+.toggle li{
+  color: black;
+}
+.toggle li:hover{
+  background-color: white;
+  color:black ;
+  border: none;
+  border-radius: 1rem;
+  padding: 1rem;
+  transition: all 0.3;
 }
 .img {
   height: 75%;
-}
-.ul {
-  display: flex;
-  flex-direction: row;
-  justify-content: end;
-  list-style: none;
-}
-.ham{
-  display: none;
-}
-.fa-solid{
-  display: none;
-}
-.li {
-  padding: 13px 40px;
-  color: black;
-}
-.li:hover {
-  background: white;
-  color: black;
-  border-radius: 1em;
+  margin-top: 10px;
 }
 .titulo{
   font-size: 3rem;
 }
 .modelos {
   margin: 120px 0px 0px 0px;
+}
+.modelos:hover{
+  transform: scale(1.1);
+  transition: all 0.3s;
 }
 .caja {
   display: flex;
@@ -77,32 +81,32 @@
 .texto p{
 margin-top: 20px;
 }
-.btn{
-  display: flex;
+.btn{display: flex;
   justify-content: center;
-  margin-top: 30px;
-  list-style: none;
+  align-items: center;
+  margin-top: 50px;
 }
-.btn-a{;
-  height: 50px;
-  width: 140px;
+.btn-a{
+  height: 8vh;
+  width: 18vw;
+  margin-right:40px;
+  border-radius:2em;
   background-color: black;
   color: white;
-  border-radius:2em;
   cursor: pointer;
+
 }
 .btn-b{
-  height: 50px;
-  width: 140px;
+  height: 8vh;
+  width: 18vw;
   border-radius: 2em;
-  margin-left: 100px;
   cursor: pointer;
 }
 .parrafo_caja{
   display: flex;
   flex-direction: column;
   line-height: 1.5;
-  width: 100%;
+  width: 90vw;
   /* padding: 10px; */
   margin: 150px 20px;
   box-shadow: 5px 5px 5px  rgba(0, 0, 0, 0.5);
@@ -110,7 +114,7 @@ margin-top: 20px;
 }
 .parrafo_caja_a{
   text-align: center;
-  width: 95%;  
+  width: 95vw;  
 }
 .encabezad-n{
   font-size: 1.5rem;
@@ -119,6 +123,9 @@ margin-top: 20px;
 }
 .encabezad-n h2{
   margin-bottom: 20px;
+}
+.encabezad-n p{
+  padding: 0px 15px 0px 15px;
 }
 .iconos{
 display: flex;
@@ -159,21 +166,111 @@ flex-wrap: wrap;
   right: 25px;
   bottom:25px;
 }
+.fixed:hover{
+  transform: scale(1.2);
+  transition: all 0.3s;
+}
+.vidrio{
+  height: 300px;
+  width: 200px;
+background: rgba(255, 255, 255, 0.1);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(2.6px);
+border: 1px solid rgba(255, 255, 255, 0.31);
+position: relative;
+}
+.vidrio-texto{
+  
+}
+
+.fa-brands{
+  font-size: 3rem;
+  color: white;
+}
+.redes{
+  background: rgba(255, 255, 255, 0.11);
+  margin: 25px auto;
+  width: 100vw;
+  padding-bottom:25px;
+  display: flex;
+  flex-direction: column;
+
+}
+  .redes h2{
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 40px;
+    width: 100%;
+  }
+  .redes-links{
+    display: flex;
+    justify-content:space-evenly;
+    align-items:center;
+  }
+  .redes-links p{
+    font-size: 2rem;
+  }
+
+
+
+
+  .footer{
+    width: 100vw;
+    height: 200px;
+    background-color: black;
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+
  @media (max-width: 1000px){  /* este media hace que cambie cuando hago la pantalla mas chica. guey*/
 .body{ 
   background:url(./img/charlota.png);
-  /* width: 100vw; */
   display: flex;
   flex-direction: column;
   justify-content: center;
-  text-align: center;
-} 
+  text-align: center;} 
+
 .cabeza{
-  width: 98vw;
+  width: 100%;
+  display: flex;
 }
-.ul{
-  /* display: none; */
+.hamburguesa{
+  display: flex;
+  flex-direction: column;
 }
+.fa-solid {
+  display: flex;
+  font-size: 2rem;
+  margin: 15px 20px 0px 0px ;
+}
+.menu-toggle {
+  display: none;
+}
+.toggle {
+  display: none;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(2.6px);
+  border: 1px solid rgba(255, 255, 255, 0.31);
+  margin: 35px 30px 0px 0px;
+  width: 80%;
+  height: 170%;
+  border-radius: 1rem;
+  font-weight: 600;
+}
+.toggle li {
+  display: block;
+  padding: 10px 0;
+  color: white;
+}
+.menu-toggle:checked + .toggle {
+  display: block;
+}
+
 .caja{ 
   display: flex;
   flex-direction: column;
@@ -185,26 +282,25 @@ flex-wrap: wrap;
   width: 90%;
   height: auto;
 }
-.encabezad-n p{ text-align: center;
+.encabezad-n p{ 
+  text-align: center;
+  padding: 0px 15px 0px 15px;
 }
 .btn{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
 }
 .btn-a{
-  margin-bottom: 20px;
-  width: 11rem;
   border: none; 
-  width: 20vw; 
+  width: 30vw; 
+  margin-left: 40px;
 }
 .btn-b{
-  margin-right: 100px;
-  width: 11rem;
   border: none;
   width: 30vw;
+  margin-top: 25px;
 }
 .parrafo_caja p{
   display: flex;
@@ -212,7 +308,46 @@ flex-wrap: wrap;
   justify-content: center;
   line-height: 170%;
 }
+.redes{
+width: 100%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+flex-wrap: wrap;
+}
+.redes-links{
+  width: 100%;
+  display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+flex-wrap: wrap;
+}
+.redes-links i{
+  margin: 10px auto;
 }
 
+.footer{
+  width: 100%;
+  height: 200px;
+  background-color: black;
+  display: flex;
+}
 
-
+@media (max-width: 776px){ 
+/* aca es para el celu y tablet. */
+.btn_0{
+  display: flex;
+  flex-direction: column;
+}
+.btn-a{
+  width: 11rem;
+  border: none; 
+  width: 30vw;
+}
+.btn-b{
+  width: 11rem;
+  border: none;
+  width: 30vw;
+}

@@ -5,108 +5,241 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>NAV.BAR</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body class="body">
-
     <header class="cabeza">
       <a href="index.html">
-      <nav class="nav">
-        <img  class="img"   src="./img/maniqui.png"  alt="logo"
+        <img class="img" src="./img/maniqui.png" alt="logo" />
       </a>
-        <ul class="ul">
-          <a href="Productos.index"> <li class="li">Productos</li></a>
-          <a href="Servicios.index"> <li class="li">Servicios</li></a>
-          <a href="Contactanos.index"> <li class="li">Contactanos</li></a>
-          <a href="Ofertas.index"> <li class="li">Ofertas</li></a>
-          <a href="Ofertas.html"> <li class="ham"><i class="fa-solid fa-bars"></i></li></a>
+      <div class="hamburguesa">
+        <label for="menu-toggle">
+          <div class="icono-ham">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+        </label>
+        <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+        <ul class="toggle">
+          <a href="Productos.html" target="_blank"><li>Productos</li></a>
+          <a href="Servicios.html" target="_blank"><li>Servicios</li></a>
+          <a href="Contactanos.html" target="_blank"><li>Contactanos</li></a>
         </ul>
-        
-      </nav>
+      </div>
     </header>
 
-      <menu class="p-principal">
-        <section class="caja">
-          <div class="modelos-caja" >
-            <img class="modelos" src="./img/mas larga.png" alt="img">
-          </div>
+    <main class="p-principal">
+      <section class="caja">
+        <div class="modelos-caja">
+          <img class="modelos" src="./img/mas larga.png" alt="img" />
+        </div>
         <article class="texto">
-              <h1 class="titulo">R & R</h1>
-              <h3>Tu ropa tiene una segunda oportunidad de brillar.</h3>
-              <p>Por que estamos hechos de historias, de lo que vivimos Lorem ipsum dolor sit amet consectetur perro acaria goenaos dakasiw askdad asqw gasdk jasdasdn adipisicing elit. Temporibus aperiam iure eligendi. Maxime nihil voluptates nam quaerat libero eos facere.</p>
+          <h1 class="titulo">R & R</h1>
+          <h3>Tu ropa tiene una segunda oportunidad de brillar.</h3>
+          <p>
+            Por que estamos hechos de historias, de lo que vivimos Lorem ipsum
+            dolor sit amet consectetur perro acaria goenaos dakasiw askdad asqw
+            gasdk jasdasdn adipisicing elit. Temporibus aperiam iure eligendi.
+            Maxime nihil voluptates nam quaerat libero eos facere.
+          </p>
           <div class="btn_0">
-              <ul class="btn">  
-            <li ><button class="btn-a" type="submit">Learn More</button></li>
-            <li ><button class="btn-b" type="submit">Call to action</button></li>
-              </ul>
+            <ul class="btn">
+              <li><button class="btn-a" type="submit">Learn More</button></li>
+              <li>
+                <button class="btn-b" type="submit">Call to action</button>
+              </li>
+            </ul>
           </div>
         </article>
-        </section>
-        <section class="parrafo_caja_a">
-          <div class="parrafo_caja">
-            <h2>Razones para usar ropa con historia.</h2>
-              <p>Al adquirir nuestra ropa estás contribuyendo al cuidado del Medioambiente. Los beneficios ambientales de comprar ropa de segunda mano son los primeros y más importantes en este post.
-                Si compras ropa de segunda mano ayudas de diferentes formas a frenar el cambio climático, promoviendo el desarrollo de la Moda Circular , por ejemplo:
-               Disminuyes la producción de desechos al reutilizar antes que descartar.
-               Fomentas el movimiento, con todos los beneficios que esta movida tiene para ofrecerte desde la sustentabilidad.
-               Prolongas la vida útil de las prendas para las cuáles, en su producción, se emplearon muchos recursos naturales. Es decir, disminuye el uso excesivo de recursos para fabricar prendas nuevas.Si deseas personalizar más tu estilo, darle un toque especial a tu ropero o guardarropas, la opción de comprar ropa usada ¡es tu camino a seguir!.
-               Cuando compras en tiendas de segunda mano puedes encontrar prendas únicas, de primeras marcas, artículos de otras épocas y vintage. Esto marca la diferencia con la moda del movimiento fast fashion donde se produce a escala ropa similar.Esto, en estos días, es fundamental.  Comprando ropa de segunda mano ahorras mucho dinero, ya que las prendas cuestan mucho menos.  Te aconsejo siempre que busques entre las tiendas de segunda mano cuál es la que te conviene, porque suele haber diferencias en el precio entre una y otra.El consumo responsable se trata de ser conscientes de que no se necesitan tantos artículos de moda, o tener un gran guardarropa para ser feliz. Se trata de encontrar tu estilo y pensar si necesitas lo que estás comprando, o en que te haría sentir mejor esa adquisición.Si deseas tener artículos nuevos, originales, duraderos y baratos para tu clóset, ¡esta opción te viene de maravillas!. Además puedes deshacerte de la ropa que no te gusta, o que no te queda, o que ya no sientes de tu estilo.</p>
-            </div>
-          </section>
-          <section class="titulo-y-sub">
-            <div class="encabezad-n">
-              <h2>Nuestras Ventajas.</h2>
-              <p>Elegirnos no solo es creer en nosotros, sino en el vinculo que crearemos. Todos merecemos una segunda chance.</p>
-            </div>
-            <div class="iconos">
-              <div class="icono">
-              <span>  <img class="logo circulo" src="./img/ropa-removebg-preview.png" alt="">       </span>
-              <h3>Variedad en ropa.</h3>
-              <p> Todo tipo de estilos, marcas y talles para que puedas regalar, o renovar tu closet.</p>
-            </div>
-            <div class="icono">
-              <span> <img class="logo circulo"  src="./img/Percha.png" alt=""></span>
-              <h3>Segunda oportunidad de tus ropa.</h3>
-              <p>Nos enfocamos en la segunda chance como parte de nuestro pensamiento ecologista.</p>
-            </div>
-            <div class="icono">
-              <span>  <img class="logo circulo" src="./img/personas.png" alt=""></span>
-              <h3>Creadores de  vinculos.</h3>
-              <p> Mediante la ropa creamos vinculos, unimos historias y personas.</p>
-            </div>
+      </section>
+
+      <section class="parrafo_caja_a">
+        <div class="parrafo_caja">
+          <h2>Razones para usar ropa con historia.</h2>
+          <p>
+            Al adquirir nuestra ropa estás contribuyendo al cuidado del
+            Medioambiente. Los beneficios ambientales de comprar ropa de segunda
+            mano son los primeros y más importantes en este post. Si compras
+            ropa de segunda mano ayudas de diferentes formas a frenar el cambio
+            climático, promoviendo el desarrollo de la Moda Circular , por
+            ejemplo: Disminuyes la producción de desechos al reutilizar antes
+            que descartar. Fomentas el movimiento, con todos los beneficios que
+            esta movida tiene para ofrecerte desde la sustentabilidad. Prolongas
+            la vida útil de las prendas para las cuáles, en su producción, se
+            emplearon muchos recursos naturales. Es decir, disminuye el uso
+            excesivo de recursos para fabricar prendas nuevas.Si deseas
+            personalizar más tu estilo, darle un toque especial a tu ropero o
+            guardarropas, la opción de comprar ropa usada ¡es tu camino a
+            seguir!. Cuando compras en tiendas de segunda mano puedes encontrar
+            prendas únicas, de primeras marcas, artículos de otras épocas y
+            vintage. Esto marca la diferencia con la moda del movimiento fast
+            fashion donde se produce a escala ropa similar.Esto, en estos días,
+            es fundamental. Comprando ropa de segunda mano ahorras mucho dinero,
+            ya que las prendas cuestan mucho menos. Te aconsejo siempre que
+            busques entre las tiendas de segunda mano cuál es la que te
+            conviene, porque suele haber diferencias en el precio entre una y
+            otra.El consumo responsable se trata de ser conscientes de que no se
+            necesitan tantos artículos de moda, o tener un gran guardarropa para
+            ser feliz. Se trata de encontrar tu estilo y pensar si necesitas lo
+            que estás comprando, o en que te haría sentir mejor esa
+            adquisición.Si deseas tener artículos nuevos, originales, duraderos
+            y baratos para tu clóset, ¡esta opción te viene de maravillas!.
+            Además puedes deshacerte de la ropa que no te gusta, o que no te
+            queda, o que ya no sientes de tu estilo.
+          </p>
+        </div>
+      </section>
+      <section class="titulo-y-sub">
+        <div class="encabezad-n">
+          <h2>Nuestras Ventajas.</h2>
+          <p>
+            Elegirnos no solo es creer en nosotros, sino en el vinculo que
+            crearemos. Todos merecemos una segunda chance.
+          </p>
+        </div>
+        <div class="iconos">
+          <div class="icono">
+            <span>
+              <img
+                class="logo circulo"
+                src="./img/ropa-removebg-preview.png"
+                alt=""
+              />
+            </span>
+            <h3>Variedad en ropa.</h3>
+            <p>
+              Todo tipo de estilos, marcas y talles para que puedas regalar, o
+              renovar tu closet.
+            </p>
           </div>
-          </section>
-          <section class="titulo-y-sub">
-            <div class="encabezad-n">
-              <h2>Como Trabajamos...</h2>
-              <p>Nuestra propuesta de trabajo consiste en reducir nuestro huella ambiental, dandole una segunda oportunidad a esa ropa que tenes guardada y esta esperando alguien mas, alguien que tambien comparte nuestra forma de ver el mundo, en donde al comrpar ropa con historia, aporta al medio ambiente, ademas de unirce a nuestro viaje.</p>
-            </div>
-            <div class="iconos">
-              <div class="icono">
-              <span class="circulo">01</span>
-              <h3>Reducir nuestro impacto.</h3>
-              <p>Mediante nuestro metodo de eleccion de ropa sustenable, reducimos consistentemente la emision de gases y de este modo,  hacemos nuestra parte.</p>
-              </div>
-            <div class="icono">
-              <span class="circulo">02</span>
-              <h3>Nuestro local.</h3>
-              <p>En nuestro local solo utilizamos muebles reciclados y materiales renovables.Nuestra filosofia en integral en todos los aspectos.</p>
-            </div>
-            <div class="icono">
-              <span class="circulo">03</span>
-              <h3>Menos costos.</h3>
-              <p>El dinero que te ahorras en comprar ropa nueva, la podes destinar a otros hobbies y necesidedes de tu vida. </p>
-            </div>
-            <div class="icono">
-              <span class="circulo">04</span>
-              <h3>Espacio de donación.</h3>
-              <p> Proximamente estaremos abriendo un espacio de donaciones, contribuyendo no solo al medio ambiente, sino aportando valor a nuestras actividades en la sociedad para quienes mas lo necesitan.</p>
-            </div>
-          </div>          
-          </section>
-          <a href=""><img  class="fixed"src="./img/whatsapp-logo-11.png" alt=""></a>            
-      </menu>
-    </header>
+          <div class="icono">
+            <span>
+              <img class="logo circulo" src="./img/Percha.png" alt=""
+            /></span>
+            <h3>Segunda oportunidad de tus ropa.</h3>
+            <p>
+              Nos enfocamos en la segunda chance como parte de nuestro
+              pensamiento ecologista.
+            </p>
+          </div>
+          <div class="icono">
+            <span>
+              <img class="logo circulo" src="./img/personas.png" alt=""
+            /></span>
+            <h3>Creadores de vinculos.</h3>
+            <p>
+              Mediante la ropa creamos vinculos, unimos historias y personas.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="titulo-y-sub">
+        <div class="encabezad-n">
+          <h2>Como Trabajamos...</h2>
+          <p>
+            Nuestra propuesta de trabajo consiste en reducir nuestro huella
+            ambiental, dandole una segunda oportunidad a esa ropa que tenes
+            guardada y esta esperando alguien mas, alguien que tambien comparte
+            nuestra forma de ver el mundo, en donde al comrpar ropa con
+            historia, aporta al medio ambiente, ademas de unirce a nuestro
+            viaje.
+          </p>
+        </div>
+        <div class="iconos">
+          <div class="icono">
+            <span class="circulo">01</span>
+            <h3>Reducir nuestro impacto.</h3>
+            <p>
+              Mediante nuestro metodo de eleccion de ropa sustenable, reducimos
+              consistentemente la emision de gases y de este modo, hacemos
+              nuestra parte.
+            </p>
+          </div>
+          <div class="icono">
+            <span class="circulo">02</span>
+            <h3>Nuestro local.</h3>
+            <p>
+              En nuestro local solo utilizamos muebles reciclados y materiales
+              renovables.Nuestra filosofia en integral en todos los aspectos.
+            </p>
+          </div>
+          <div class="icono">
+            <span class="circulo">03</span>
+            <h3>Menos costos.</h3>
+            <p>
+              El dinero que te ahorras en comprar ropa nueva, la podes destinar
+              a otros hobbies y necesidedes de tu vida.
+            </p>
+          </div>
+          <div class="icono">
+            <span class="circulo">04</span>
+            <h3>Espacio de donación.</h3>
+            <p>
+              Proximamente estaremos abriendo un espacio de donaciones,
+              contribuyendo no solo al medio ambiente, sino aportando valor a
+              nuestras actividades en la sociedad para quienes mas lo necesitan.
+            </p>
+          </div>
+        </div>
+      </section>
+      <a href="https://wa.link/zwnd9z" target="_blank"
+        ><img class="fixed" src="./img/whatsapp-logo-11.png" alt=""
+      /></a>
+      <h2 class="n-productos">Nuestros Productos</h2>
+      <div class="vidrio">
+        <div class="vidrio-texto">
+          icono
+          <span></span>
+          <p></p>
+          <a href="#"></a>
+        </div>
+      </div>
+
+      <article class="redes">
+        <div>
+          <h2>Redes Sociales</h2>
+        </div>
+        <div class="redes-links">
+          <p>Seguinos en nuestro Instagram</p>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <p>Seguinos en nuestro facebook</p>
+        </div>
+      </article>
+    </main>
+
+    <footer class="footer">
+      <div class="caja-nav">
+        <div class="item-1">
+          <h3>Navegación</h3>
+          <p>Productos</p>
+          <p>Servicios</p>
+          <p>Contactanos</p>
+        </div>
+      </div>
+
+      <div>
+        <div class="caja-pagos">
+          <h3>Medios de pago.</h3>
+          <img src="./img/oca.png" alt="Medios-de-pago" />
+        </div>
+      </div>
+
+      <div>
+        <div class="envios">
+          <h3>Envios.</h3>
+          <img src="./img/tarjetas.png" alt="" />
+        </div>
+      </div>
+
+      <div>
+        <div class="contacto">
+          <h3>Contactanos por Mail</h3>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
