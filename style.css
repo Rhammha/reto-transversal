@@ -5,7 +5,7 @@
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
-  /* border: 1px red solid; */
+  border: 1px red solid;
   list-style: none;
   
 }
@@ -63,6 +63,7 @@
 .caja {
   display: flex;
   flex-direction: row;
+  justify-content: center;
   align-items: center;
 }
 .texto {
@@ -170,18 +171,64 @@ flex-wrap: wrap;
   transform: scale(1.2);
   transition: all 0.3s;
 }
+.n-productos{margin-bottom: 60px;  text-align: center;
+  
+}
+/* Aca empieza la cars */
 .vidrio{
   height: 300px;
-  width: 200px;
+  width: 220px;
 background: rgba(255, 255, 255, 0.1);
 border-radius: 16px;
 box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 backdrop-filter: blur(2.6px);
 border: 1px solid rgba(255, 255, 255, 0.31);
 position: relative;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
 }
 .vidrio-texto{
-  
+  display: flex;}
+  .vidrio-texto span{
+    margin-right: 60px;
+  }
+
+.vidrio img{
+  height: 250px;
+  width: 150px;
+}
+.products{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.vidrio:hover {
+  transform: scale(1.3);
+  transition: all 0.3s;
+}
+.links-ab a{
+  color:black;
+  display: flex;
+  margin:0px 15px;
+  background: rgba(255, 255, 255, 0.7);
+  padding: 5px;
+}
+.links-ab{
+  color: white;
+  display: flex;
+  padding: 0.9rem;
+  border: none;
+  border-radius: 10px;
+  position: absolute;
+  bottom: 35px;
+  transform: scale(1.3);
+  transition: all 0.3s;
+  display: none;
+}
+.links-ab:hover{
+  display: flex;
 }
 
 .fa-brands{
@@ -190,13 +237,13 @@ position: relative;
 }
 .redes{
   background: rgba(255, 255, 255, 0.11);
-  margin: 25px auto;
-  width: 100vw;
+  margin: 65px auto;
+  width: 100%;
   padding-bottom:25px;
   display: flex;
   flex-direction: column;
-
 }
+
   .redes h2{
     text-align: center;
     font-size: 3rem;
@@ -204,25 +251,76 @@ position: relative;
     width: 100%;
   }
   .redes-links{
-    display: flex;
-    justify-content:space-evenly;
-    align-items:center;
+    width: 100%;
+    display: flex; 
+    justify-content: space-around;
+    
   }
   .redes-links p{
     font-size: 2rem;
   }
+  .iconos-redes{
+    display: flex;
+    align-items: center;
+  }
+ .iconos-redes a{
+  padding: 0px 15px;
+ }
 
 
 
 
   .footer{
-    width: 100vw;
-    height: 200px;
+    width: 100%;
+    height: 35%;
     background-color: black;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
+    align-items: center;
   }
-
+  .caja-footer{
+    width: 80%;
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-around;
+  }
+ .caja-footer h3{
+  margin-bottom: 15px;
+ }
+ .item-1{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ }
+.iconos-f{
+  color: white;
+  width: 100%;
+  display: flex;
+}
+.iconos-f p{
+  margin-bottom: 10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.iconos-f img{
+  width: 50px;
+  height: 50px;
+  border-radius: 60%;
+}
+.mail-f{
+  display:flex ;
+}
+.img-iconos-f{
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+.contacto-f{
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+}
 
  @media (max-width: 1000px){  /* este media hace que cambie cuando hago la pantalla mas chica. guey*/
 .body{ 
@@ -273,7 +371,6 @@ position: relative;
 
 .caja{ 
   display: flex;
-  flex-direction: column;
 }
 .modelos-caja .modelos{
   display: none;
@@ -285,6 +382,7 @@ position: relative;
 .encabezad-n p{ 
   text-align: center;
   padding: 0px 15px 0px 15px;
+  width: 100%;
 }
 .btn{
   display: flex;
@@ -326,16 +424,31 @@ flex-wrap: wrap;
 }
 .redes-links i{
   margin: 10px auto;
+  width: 100%;
+}
+.caja-footer{
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+.iconos-f{display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.item-1{
+  margin-bottom: 25px;
 }
 
 .footer{
   width: 100%;
-  height: 200px;
+  height: 25%;
   background-color: black;
   display: flex;
+  flex-direction: column;
 }
 
-@media (max-width: 776px){ 
+@media (max-width: 700px){ 
 /* aca es para el celu y tablet. */
 .btn_0{
   display: flex;
@@ -350,4 +463,25 @@ flex-wrap: wrap;
   width: 11rem;
   border: none;
   width: 30vw;
+}
+.caja-footer{
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.item-1 .iconos-f{display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contactanos-f{
+  margin-bottom: 10px;
+}
+.pagos-f{
+  margin-top: 30px;
+  width: 70%;
+}
+.pagos-f img{
+  width: 100%;
 }
